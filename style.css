@@ -1,0 +1,63 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    width: 180px;
+    padding: 10px;
+    background-color: #ffd0ae;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+#tamagotchi {
+    text-align: center;
+    background: none;
+    box-shadow: none;
+}
+
+#pet {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#petImg {
+  transition: transform 0.3s;
+}
+
+#petImg.happy {
+  transform: scale(1.1) rotate(5deg);
+}
+
+#petImg.sad {
+  transform: scale(0.9) rotate(-5deg);
+}
+
+#petImg.neutral {
+  transform: scale(1) rotate(0deg);
+}
+
+button {
+  padding: 8px 16px;        /* Bigger clickable area */
+  border-radius: 12px;      /* Rounded corners */
+  border: none;             /* Remove default border */
+  cursor: pointer;          /* Pointer on hover */
+  font-weight: bold;        /* Makes text pop */
+  transition: all 0.2s ease; /* Smooth hover effect */
+  background-color: #ffa96b; /* Base color */
+  color: #ffffff;              /* Text color */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+  margin: 5px; /* adds space on all sides */
+}
+
+#stats {
+  margin-bottom: 15px;
+}
+
+#stats div {
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: #ff7e33;
+}
+
+/* Example dynamic fill colors via JS (you can add inline style) */
+#health::after { background-color: #81c784; width: 50%; }
+#happiness::after { background-color: #64b5f6; width: 50%; }

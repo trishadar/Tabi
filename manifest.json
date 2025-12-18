@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Tabi",
+  "version": "1.0",
+  "description": "A Tamagotchi that reacts to your browsing habits!",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
